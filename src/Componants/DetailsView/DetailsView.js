@@ -11,7 +11,7 @@ const DetailsView = () => {
     const [packag, setPackage] = useState({});
 
     useEffect(() => {
-        fetch('http://localhost:5000/packages')
+        fetch('https://mysterious-dawn-83616.herokuapp.com/packages')
             .then(res => res.json())
 
             .then(data => setPackage(data.find(singlePackage => singlePackage._id === packageId)));

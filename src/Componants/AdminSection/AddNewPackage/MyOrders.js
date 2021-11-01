@@ -11,7 +11,7 @@ const MyOrders = () => {
     const { user } = useAuth();
     const [myOrder, setMyOrder] = useState([]);
     useEffect(() => {
-        fetch(`http://localhost:5000/orders/${user.uid}`)
+        fetch(`https://mysterious-dawn-83616.herokuapp.com/orders/${user.uid}`)
             .then(res => res.json())
             .then(data => setMyOrder(data))
     }, []);
@@ -21,7 +21,7 @@ const MyOrders = () => {
     const handleDelete = id => {
         const proceed = window.confirm('Are you sure, you want to delete?');
         if (proceed) {
-            const url = `http://localhost:5000/order/${id}`;
+            const url = `https://mysterious-dawn-83616.herokuapp.com/order/${id}`;
             fetch(url, {
                 method: "DELETE"
             })

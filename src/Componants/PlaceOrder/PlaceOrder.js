@@ -16,7 +16,7 @@ const PlaceOrder = () => {
 
     // To show Your Selected Item In Purcase Page 
     useEffect(() => {
-        const url = `http://localhost:5000/packages/${getId}`;
+        const url = `https://mysterious-dawn-83616.herokuapp.com/packages/${getId}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setSingleOrdered(data))
@@ -55,7 +55,7 @@ const PlaceOrder = () => {
             alert('Already added this item on cart.');
         }
         else {
-            fetch('http://localhost:5000/newOrder/add', {
+            fetch('https://mysterious-dawn-83616.herokuapp.com/newOrder/add', {
                 method: 'POST',
                 headers: { 'content-type': 'application/json' },
                 body: JSON.stringify(tourService)

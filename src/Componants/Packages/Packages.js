@@ -15,10 +15,9 @@ const Packages = () => {
 
 
     useEffect(() => {
-        fetch('http://localhost:5000/packages')
+        fetch('https://mysterious-dawn-83616.herokuapp.com/packages')
             .then(res => res.json())
             .then(data => setPackages(data));
-
 
     }, [])
 

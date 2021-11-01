@@ -24,7 +24,7 @@ const AddNewPackage = () => {
 
         const newPackage = { title, description, img, price, duration, person, country };
 
-        fetch('http://localhost:5000/packages', {
+        fetch('https://mysterious-dawn-83616.herokuapp.com/packages', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

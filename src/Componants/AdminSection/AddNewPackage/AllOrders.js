@@ -44,7 +44,7 @@ const tableIcons = {
 };
 
 const api = axios.create({
-    baseURL: `http://localhost:5000`
+    baseURL: `https://mysterious-dawn-83616.herokuapp.com`
 
 })
 
@@ -72,7 +72,7 @@ const AllOrders = () => {
 
 
     useEffect(() => {
-        fetch(`http://localhost:5000/orders`)
+        fetch(`https://mysterious-dawn-83616.herokuapp.com/orders`)
             .then(res => res.json())
             .then(data => setData(data))
     }, []);
