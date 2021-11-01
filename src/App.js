@@ -15,7 +15,7 @@ import AuthProvider from './Context/AuthProvider';
 import Header from './Componants/Header/Header';
 import Signup from './Componants/Signup/Signup';
 import Login from './Componants/Login/Login';
-import ExpertTips from './Componants/ExpertTips/ExpertTips';
+
 import Packages from './Componants/Packages/Packages';
 import MyOrders from './Componants/AdminSection/AddNewPackage/MyOrders';
 
@@ -62,9 +62,7 @@ function App() {
             <Route path="/detail_package/:packageId" title="Details View"  >
               <DetailsView></DetailsView>
             </Route>
-            <PrivateRoute path="/experttips">
-              <ExpertTips></ExpertTips>
-            </PrivateRoute>
+
             <PrivateRoute path="/contact">
               <Contact></Contact>
             </PrivateRoute>
