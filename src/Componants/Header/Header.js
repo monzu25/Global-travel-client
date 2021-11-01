@@ -41,47 +41,37 @@ const Header = () => {
                     <Navbar.Brand as={Link} className="fw-bolder " to="/">Global Tour</Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav" >
-                        <Nav className="me-2 ms-3 ps-3 justify-content-center text-white">
+                        <Nav className="me-5 ms-3 ps-3 justify-content-between text-white">
+
                             <Nav.Link as={Link} className="text-white" to="/">Home</Nav.Link>
                             <Nav.Link as={Link} className="text-white" to="/packages">Packages</Nav.Link>
                             <Nav.Link as={Link} className="text-white" to="/profile">Profile</Nav.Link>
-                          
-                            <Nav.Link as={Link} className="text-white" to="/contact">Contact</Nav.Link>
 
-
-
-                            {
-                                user.email
-                                    ?
-                                    <>
-                                        <Nav.Link as={Link} className="text-white" to="/myOrders">My Orders</Nav.Link>
-                                        <Nav.Link as={Link} className="text-white" to="/manageAllOrders">Manage All Orders</Nav.Link>
-                                        <Nav.Link as={Link} className="text-white" to="/addNewPackage">Add New package</Nav.Link>
-                                        <Button onClick={logOut} variant="light">Logout</Button>
-
-                                    </>
-                                    :
-                                    <>
-                                        <Nav.Link as={Link} to="/login">Login</Nav.Link>
-                                    </>
-                            }
-
-
+                            <Nav.Link as={Link} className="text-white me-5" to="/contact">Contact</Nav.Link>
 
 
                         </Nav>
-                        <Nav>
-                            <Navbar.Collapse className="justify-content-end">
-                                <Nav.Link as={Link} to="/signup"> Signup</Nav.Link>
-                                {/* {user?.email
-                                    ?
-                                    <Button onClick={logOut} variant="light">Logout</Button>
-                                    :
-                                    <Nav.Link as={Link} to="/login">Login</Nav.Link>
+                        <div><i style={{ color: "#fff" }} class="fas fa-grip-lines-vertical"></i> </div>
+                        <Nav className="ms-5 justify-content-end ">
+                            <Navbar.Collapse className=" ms-5 justify-content-end">
+                                {
+                                    user.email
+                                        ?
+                                        <>
+                                            <Nav.Link as={Link} className="text-white" to="/myOrders">My Orders</Nav.Link>
+                                            <Nav.Link as={Link} className="text-white" to="/allorders">All Orders</Nav.Link>
+                                            <Nav.Link as={Link} className="text-white" to="/addNewPackage">Add  package</Nav.Link>
+                                            <Button onClick={logOut} variant="light">Logout</Button>
+                                            <Navbar.Text>
+                                                <a href="#login">{user?.displayName}</a>
+                                            </Navbar.Text>
+                                        </>
+                                        :
+                                        <>
+                                            <Nav.Link as={Link} to="/login">Login</Nav.Link>
+                                            <Nav.Link as={Link} to="/signup"> Signup</Nav.Link>
+                                        </>
                                 }
-                                <Navbar.Text>
-                                    <a href="#login">{user?.displayName}</a>
-                                </Navbar.Text> */}
                             </Navbar.Collapse>
                         </Nav>
                     </Navbar.Collapse>

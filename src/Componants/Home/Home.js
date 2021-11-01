@@ -2,6 +2,7 @@ import React from 'react';
 import Packages from '../Packages/Packages';
 import Bottom from './Bottom/Bottom';
 import Slider from './Slider/Slider';
+import Testmonial from './Testmonial/Testmonial';
 
 
 const Home = () => {
@@ -15,6 +16,7 @@ const Home = () => {
             {/* <ExtraCss></ExtraCss> */}
             {/* <DetailsView></DetailsView> */}
             <Bottom></Bottom>
+            <Testmonial></Testmonial>
 
         </div>
     );

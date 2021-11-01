@@ -18,9 +18,10 @@ import Login from './Componants/Login/Login';
 import ExpertTips from './Componants/ExpertTips/ExpertTips';
 import Packages from './Componants/Packages/Packages';
 import MyOrders from './Componants/AdminSection/AddNewPackage/MyOrders';
-import ManageAllOrders from './Componants/AdminSection/AddNewPackage/ManageAllOrders';
+
 import AddNewPackage from './Componants/AdminSection/AddNewPackage/AddNewPackage';
 import PlaceOrder from './Componants/PlaceOrder/PlaceOrder';
+import AllOrders from './Componants/AdminSection/AddNewPackage/AllOrders';
 
 function App() {
   return (
@@ -42,12 +43,13 @@ function App() {
               <Profle></Profle>
             </Route>
 
-            {/* Admin Section Route  */}
+
             <PrivateRoute path="/myOrders" title="My Orders" >
               <MyOrders></MyOrders>
             </PrivateRoute>
-            <PrivateRoute path="/manageAllOrders" title="Manage All Orders" >
-              <ManageAllOrders></ManageAllOrders>
+
+            <PrivateRoute path="/allorders" title="Manage All Orders" >
+              <AllOrders></AllOrders>
             </PrivateRoute>
             <PrivateRoute path="/addNewPackage" title="Add New Package" >
               <AddNewPackage></AddNewPackage>
