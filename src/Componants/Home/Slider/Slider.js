@@ -1,18 +1,17 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
-
+import './Slider.css';
 const Slider = () => {
 
 
 
     return (
-        <div>
-
-            <Carousel fade style={{ height: "500px" }}>
-                <Carousel.Item>
+        <div >
+            <Carousel className='carosol-item' fade style={{ height: "500px" }}>
+                <Carousel.Item >
                     <img height="500px"
                         className="d-block w-100"
-                        src="https://blog.ncltravel.com/wp-content/uploads/sites/2/2020/06/Biman-scaled.jpg"
+                        src="https://gotravel.qodeinteractive.com/wp-content/uploads/2016/04/slide-1.jpg"
                         alt="Third slide"
                     />
 
@@ -21,7 +20,7 @@ const Slider = () => {
                         <p>Customer Satisfaction is one of our first Priority</p>
                     </Carousel.Caption>
                 </Carousel.Item>
-                <Carousel.Item>
+                <Carousel.Item >
                     <img height="500px"
                         className="d-block w-100"
                         src="https://tbbd-flight.s3.ap-southeast-1.amazonaws.com/images/large/0FfQRLsVm8XPGh0Q89a-j0sDF8FaOPyB.jpg"
@@ -32,7 +31,7 @@ const Slider = () => {
                         <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                     </Carousel.Caption>
                 </Carousel.Item>
-                <Carousel.Item>
+                <Carousel.Item >
                     <img height="500px"
                         className="d-block w-100"
                         src="https://tbbd-flight.s3.ap-southeast-1.amazonaws.com/images/large/Yf_GrrZK0SsRKJ7CyFzRugIizl04CK0D.jpg"
@@ -44,7 +43,7 @@ const Slider = () => {
                         <p>Get A Happy Tour With us</p>
                     </Carousel.Caption>
                 </Carousel.Item>
-                <Carousel.Item>
+                <Carousel.Item >
                     <img height="500px"
                         className="d-block w-100"
                         src="https://tbbd-flight.s3.ap-southeast-1.amazonaws.com/images/large/OunyYb3qLPrpZymNJzAYvM5OWa-5_IIU.jpg"

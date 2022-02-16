@@ -53,10 +53,9 @@ const Footer = () => {
                                     style={{ width: "60px", backgroundColor: "#0791BE", height: "2px" }}
                                 />
                                 <p>
-                                    Health-Care Corporation is an New Emarging multinational
-                                    Medical corporation. It is the second largest Health Servicing
-                                    company in Bangladesh. One of the successor companies
-                                    of Standard Hospital.
+                                    Global Tour Corporation is an New Emarging multinational
+                                    Tour servicing corporation. It is the second largest Tour Servicing
+                                    company in Bangladesh. One of the successor companies of Standard Hospital.
                                 </p>
                             </div>
 
@@ -101,9 +100,7 @@ const Footer = () => {
                                 <p>
                                     <a href="#!" className="text-white text-decoration-none">Become an Affiliate</a>
                                 </p>
-                                <p>
-                                    <a href="#!" className="text-white text-decoration-none">Shipping Rates</a>
-                                </p>
+                             
                                 <p>
                                     <a href="#!" className="text-white text-decoration-none">Help</a>
                                 </p>

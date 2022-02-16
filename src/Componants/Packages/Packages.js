@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import { Row } from 'react-bootstrap';
 // import useDataHooks from '../../DataHoocks/DataHooks';
 import Package from '../Package/Package';
-
+import './Packages.css';
 
 const Packages = () => {
 
@@ -24,7 +24,7 @@ const Packages = () => {
 
     return (
 
-        <div className="container my-5">
+        <div className="container my-5 packages-container">
             <h2 className="my-3">Our Popular Packages</h2>
             <Row xs={1} md={3} className="g-4">
                 {

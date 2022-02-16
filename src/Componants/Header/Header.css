@@ -5,3 +5,218 @@
 .header-menu{
     background-color: #00294D;
 }
+
+.manu_item_links{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+  
+;
+}
+/* .navbar_private_link{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+} */
+
+/* .navbar_public_link{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+} */
+
+
+
+.signup_button,.login_button,.logout_button{
+  
+    border-radius: 5px;
+    margin-left: 10px;
+    border: none;
+
+}
+.logout_button{
+    margin-right: 20px;
+}
+.authenticate_image{
+    height: 30px;
+    width: 30px;
+    margin-left: 20px;
+    border-radius: 50px;
+}
+.user_name{
+    text-decoration: none;
+    font-size: 15px;
+      margin-left: 30px;
+}
+/* .app_navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background:  #00294D;
+    padding: 0.7rem 2rem;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+.app_navbar.scrolled{
+     background-color: #fff !important;
+    transition: background-color 200ms line
+}
+.app_navbar.scrolled .nav-link {
+    color: #555;
+}
+
+.app_navbar_logo {
+    display: flex;
+    justify-content: space-start;
+    align-items: center;
+}
+
+.app_navbar_logo img {
+    width: 200px;
+}
+
+.app_navbar_public_links_holder{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+.app_navbar_public_links_holder li{
+    margin: 0 0.7rem;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+.app_navbar_public_links_holder li:hover{
+    color: rgb(160, 149, 149);
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    border-bottom: 2px solid #b8b2af;
+    text-decoration: none;
+}
+
+
+.app_navbar_private_links_holder{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+.app_navbar_private_links_holder li a {
+    margin: 0 0.7rem;
+    text-decoration: none;
+    transition: 0.5s ease;
+}
+.app_navbar_private_links_holder li a:hover {
+   border-bottom: 2px solid #d15f17;
+}
+
+
+
+
+.app_navbar_private_links_holder ,
+.app_navbar_public_links_holder{
+    list-style: none;
+}
+
+.app_navbar_private_links_holder a,
+.app_navbar_public_links_holder a {
+    color: #fff;
+    text-decoration: none; 
+
+} */
+
+
+/* .anchor_menu {
+   
+    color: white;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    line-height: 28px;
+    font-size: 16px;
+} */
+
+
+/* Small Screen */
+/* 
+.app_navbar_for_smallscreen{
+    display: none;
+}
+
+.app_navbar_smallscreen_overlay{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100vh;
+    background: #00294D;
+    transition: 0.5s ease;
+    flex-direction: column;
+    align-items: flex-start;
+    z-index: 5;
+}
+.app_navbar_smallscreen_overlay .overlay_close{
+    font-size: 27px;
+     color: #fff;
+     cursor: pointer;
+     position: absolute;
+     /* top: 20px;
+     right: 20px;  
+}
+.app_navbar_smallscreen_public_links_holder{
+     list-style: none; 
+}
+.app_navbar_smallscreen_public_links_holder li{
+     list-style: none; 
+     margin: 2rem;
+    cursor: pointer;
+    color: #fff;
+    font-size: 2rem;
+    text-align: start;
+   
+}
+.app_navbar_smallscreen_public_links_holder li:hover{
+  color: rgb(180, 166, 166);
+} */
+
+
+
+
+
+/* Media query  */
+
+/* @media screen and (max-width: 2000px) {
+    .app_navbar_logo img {
+        width: 200px;
+    }
+} */
+/* 
+@media screen and (max-width: 1150px) {
+    .app_navbar_public_links_holder{
+        display: none;
+    }
+
+    .app_navbar_for_smallscreen {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .app_navbar {
+        padding: 0 1rem;
+    }
+    .app_navbar_private_login{
+        display: none;
+    }
+    .app_navbar_logo img {
+        width: 150px;
+    }
+} */

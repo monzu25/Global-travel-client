@@ -5,8 +5,7 @@ const Testmonial = () => {
     return (
         <div className="mt-5">
             <h3>Our Customer Experience</h3>
-            <div className="container mt-4 d-flex justify-content-center">
-
+            <div className="container mt-4 d-flex justify-content-center customer">
                 <div className="row">
                     <div className="col-md-4">
                         <div className="maincard p-3">

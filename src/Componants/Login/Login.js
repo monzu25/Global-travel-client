@@ -76,7 +76,7 @@ const Login = () => {
 
                                     <button onClick={onLogin} className="btn btn-primary w-25 h-25 " type="submit">  {loading ? 'Logging you in ...' : 'Login'}</button>
                                     <div>
-                                        <p>New To Health Care? </p>
+                                        <p>New To Global Tour? </p>
                                         <Link to="/signup">Create Account</Link>
                                     </div>
 
