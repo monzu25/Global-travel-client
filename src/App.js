@@ -15,13 +15,13 @@ import AuthProvider from './Context/AuthProvider';
 import Header from './Componants/Header/Header';
 import Signup from './Componants/Signup/Signup';
 import Login from './Componants/Login/Login';
-
 import Packages from './Componants/Packages/Packages';
 import MyOrders from './Componants/AdminSection/AddNewPackage/MyOrders';
-
 import AddNewPackage from './Componants/AdminSection/AddNewPackage/AddNewPackage';
 import PlaceOrder from './Componants/PlaceOrder/PlaceOrder';
 import AllOrders from './Componants/AdminSection/AddNewPackage/AllOrders';
+
+
 
 function App() {
   return (
@@ -42,8 +42,6 @@ function App() {
             <Route path="/profile" title="Profile">
               <Profle></Profle>
             </Route>
-
-
             <PrivateRoute path="/myOrders" title="My Orders" >
               <MyOrders></MyOrders>
             </PrivateRoute>
@@ -54,15 +52,12 @@ function App() {
             <PrivateRoute path="/addNewPackage" title="Add New Package" >
               <AddNewPackage></AddNewPackage>
             </PrivateRoute>
-
             <PrivateRoute path="/order_place/:oderId" title="Place Order">
               <PlaceOrder></PlaceOrder>
             </PrivateRoute>
-
             <Route path="/detail_package/:packageId" title="Details View"  >
               <DetailsView></DetailsView>
             </Route>
-
             <PrivateRoute path="/contact">
               <Contact></Contact>
             </PrivateRoute>
@@ -79,7 +74,6 @@ function App() {
           <Footer></Footer>
         </Router>
       </AuthProvider >
-
     </div>
   );
 }
